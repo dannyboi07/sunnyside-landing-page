@@ -23,7 +23,7 @@ h1, h2, h3, h4 {
 
 .nav-ctn {
   padding: 2.5em 1.5em;
-  background-color: #2dc5eb;
+  background-color: #3DBFF2;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +79,6 @@ h1, h2, h3, h4 {
 
 .sct-1-ctn {
   position: relative;
-  background-color: #2dc5eb;
   background-image: url(../images/desktop/image-header.jpg);
   background-size: cover;
   background-position: bottom;
@@ -116,7 +115,7 @@ h1, h2, h3, h4 {
 .sct-1-ctn img {
   position: absolute;
   top: 25%;
-  width: 30px;
+  width: 40px;
   height: clamp(50px, 30%, 100px);
 }
 
@@ -253,6 +252,7 @@ h1, h2, h3, h4 {
 }
 
 .sct-2-ctn .bottom-row-txt h3 {
+  font-size: 1.25rem;
   margin-bottom: 0.75em;
   font-family: "Fraunces", sans-serif;
   font-weight: 900;
@@ -375,7 +375,7 @@ h1, h2, h3, h4 {
 }
 
 .footer nav {
-  margin: 2em 0 5em 0;
+  margin: 2em 0 5em 1em;
 }
 
 .ft-logo-ctn {
@@ -489,6 +489,7 @@ h1, h2, h3, h4 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    display: none;
     -webkit-transform: scale(0, 0);
             transform: scale(0, 0);
     -webkit-transform-origin: 100% -9.9%;
@@ -497,8 +498,9 @@ h1, h2, h3, h4 {
     transition: all 0.25s;
   }
   .nav-ctn nav ul {
-    height: 85%;
+    height: 90%;
     width: 100%;
+    padding-top: 1.75em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -538,14 +540,17 @@ h1, h2, h3, h4 {
     display: block;
   }
   .sct-1-ctn {
+    height: 60vh;
     background-image: url(../images/mobile/image-header.jpg);
   }
   .sct-1-ctn h1 {
     text-align: center;
     border-radius: 0;
+    margin-top: 0;
   }
   .sct-1-ctn img {
-    top: 42.5%;
+    top: 37.5%;
+    height: clamp(75px, 30%, 150px);
   }
   .sct-2-ctn {
     -ms-grid-columns: 1fr;
