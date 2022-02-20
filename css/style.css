@@ -73,6 +73,10 @@ h1, h2, h3, h4 {
   display: none;
 }
 
+.mobile-img {
+  display: none;
+}
+
 .sct-1-ctn {
   position: relative;
   background-color: #2dc5eb;
@@ -527,6 +531,15 @@ h1, h2, h3, h4 {
     right: 0;
     z-index: 7;
   }
+  .desktop-img {
+    display: none;
+  }
+  .mobile-img {
+    display: block;
+  }
+  .sct-1-ctn {
+    background-image: url(../images/mobile/image-header.jpg);
+  }
   .sct-1-ctn h1 {
     text-align: center;
     border-radius: 0;
@@ -537,8 +550,8 @@ h1, h2, h3, h4 {
   .sct-2-ctn {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (1fr)[6];
-        grid-template-rows: repeat(6, 1fr);
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 80vh 80vh;
+        grid-template-rows: 1fr 1fr 1fr 1fr 80vh 80vh;
   }
   .sct-2-ctn .text-ctn:first-child {
     -ms-grid-row: 2;
@@ -559,11 +572,24 @@ h1, h2, h3, h4 {
   }
   .sct-2-ctn .bottom-row-txt {
     padding: 0 !important;
+    bottom: 3.5em;
+  }
+  .sct-2-ctn .bottom-row-txt h3 {
+    font-size: 1.75rem;
+  }
+  .sct-2-ctn .bottom-row-txt p {
+    font-size: 1rem;
   }
   .sct-2-ctn .bg-cherries, .sct-2-ctn .bg-orange {
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+  }
+  .sct-2-ctn .bg-cherries {
+    background-image: url(../images/mobile/image-graphic-design.jpg);
+  }
+  .sct-2-ctn .bg-orange {
+    background-image: url(../images/mobile/image-photography.jpg);
   }
   .sct-3-ctn {
     height: auto;

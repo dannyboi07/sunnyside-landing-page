@@ -77,6 +77,10 @@ h1, h2, h3, h4 {
     display: none;
 }
 
+.mobile-img {
+    display: none;
+}
+
 .sct-1-ctn {
     position: relative;
     background-color: hsl(192, 83%, 55%);
@@ -483,7 +487,18 @@ h1, h2, h3, h4 {
         }
     }
 
+    .desktop-img {
+        display: none;
+    }
+
+    .mobile-img {
+        display: block;
+    }
+
     .sct-1-ctn {
+        background-image: url(../images/mobile/image-header.jpg);
+        // background-attachment: fixed;
+        
         h1 {
             text-align: center;
             border-radius: 0;
@@ -496,8 +511,8 @@ h1, h2, h3, h4 {
 
     .sct-2-ctn {
         grid-template-columns: 1fr;
-        // grid-template-rows: 1fr 1fr 1fr 1fr 100vh 100vh;
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: 1fr 1fr 1fr 1fr 80vh 80vh;
+        // grid-template-rows: repeat(6, 1fr);
 
         .text-ctn:first-child {
             grid-row: 2;
@@ -519,12 +534,29 @@ h1, h2, h3, h4 {
 
         .bottom-row-txt {
             padding: 0 !important;
+            bottom: 3.5em;
+
+            h3 {
+                font-size: 1.75rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
         }
 
         .bg-cherries, .bg-orange {
             background-size: cover;
             background-repeat: no-repeat;
-            background-position: center;
+            background-position: top;
+        }
+
+        .bg-cherries {
+            background-image: url(../images/mobile/image-graphic-design.jpg);
+        }
+
+        .bg-orange {
+            background-image: url(../images/mobile/image-photography.jpg);
         }
     }
 
